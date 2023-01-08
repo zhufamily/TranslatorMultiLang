@@ -60,7 +60,7 @@ namespace TranslatorSample
                         copiedChunk = Translate(copiedChunk, lang);
                     }
                 }
-                sb.AppendLine(copiedChunk);
+                sb.Append(copiedChunk);
             }
 
             Console.Write(sb.ToString());
