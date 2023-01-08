@@ -65,3 +65,5 @@ static string _toLanguage = "en";
 </code>
 <li>Compile and run, you should see the translated text in the console window</li>
 </ol>
+<h2>License</h2>
+<p>Free software, absolutely NO warantty!  Use at your own risk.</p>  
