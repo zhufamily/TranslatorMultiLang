@@ -1,5 +1,5 @@
 <h1>A (very) simple sample to handle multiple languages in Azure Translator</h1>
-<p>Here comes a sample for dealing multiple languages in Azure Translator.</p>
+<p>Here comes a sample for how to deal multiple languages in Azure Translator.</p>
 <p>The short answer is that Azure Translator can handle multiple language documents for translation.</p>
 <p>The long answer is that there are NOT reference sections dedicated to this purpose, nor are there samples provided on this topic.</p>
 <p>So, I decided to conduct some research and come up with a simple sample for this purpose.</p>
@@ -11,7 +11,7 @@ There are three steps involved
 <p>So, first, you have to decide how much granularity you want -- to make thing simpler, it can be sentence / paragraph / custom level.</p>
 <p>For the first two, there are levels provided by some Azure internal services as well; the custom level, apparently, you have to provide your own way of generating  chunks.</p>
 <p>For this sample, we are using "break sentence" service from Translator to set up granular level at sentence.</p>
-<p>The processing timing will be increased if your granular level become smaller; so there needs to be a balance bewteen accuracy and performance.  There are zero cost for your calls to break sentence or detect language, the cost only based on characters translated.</p>
+<p>The processing time will be increased if your granular level become smaller; so there needs to be a balance bewteen accuracy and performance.  There are zero cost for your calls to break sentence or detect language, the cost only based on characters translated.</p>
 <li>Detect languages inside one chunk</li>
 <p>Translator can detect multiple languages, please see <a href="https://learn.microsoft.com/en-us/rest/api/cognitiveservices/translator/translator/detect?tabs=HTTP">a sample provided by Microsoft</a></p>
 <p>However, they are coming back in different place, one will be selected as "Primary" lanaguge, and others are marked as "alternatives".</p>
