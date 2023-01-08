@@ -60,14 +60,7 @@ namespace TranslatorSample
                         copiedChunk = Translate(copiedChunk, lang);
                     }
                 }
-                if (sb.Length == 0)
-                {
-                    sb.AppendLine(copiedChunk);
-                }
-                else
-                {
-                    sb.AppendLine($"{Environment.NewLine}{copiedChunk}");
-                }
+                sb.AppendLine(copiedChunk);
             }
 
             Console.Write(sb.ToString());
