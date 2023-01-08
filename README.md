@@ -9,8 +9,9 @@ There are three steps involved
 <li>Decide a proper granular level for your chunks</li>
 <p>Only one sentence in Japanese in a thousand page English book will not be properly detcted, if your chunk is generate at book, or chapter level.</p>  
 <p>So, first, you have to decide how much granularity you want -- to make thing simpler, it can be sentence / paragraph / custom level.</p>
-<p>For the first two, there are levels provided by some Azure internal services as well; the custom level, apparently, you have to provide your own way of dealing with chunks.</p>
+<p>For the first two, there are levels provided by some Azure internal services as well; the custom level, apparently, you have to provide your own way of generating  chunks.</p>
 <p>For this sample, we are using "break sentence" service from Translator to set up granular level at sentence.</p>
+<p>The processing timing will be increased if your granular level become smaller; so there needs to be a balance bewteen accuracy and performance.  There are zero cost for your calls to break sentence or detect language, the cost only based on characters translated.</p>
 <li>Detect languages inside one chunk</li>
 <p>Translator can detect multiple languages, please see <a href="https://learn.microsoft.com/en-us/rest/api/cognitiveservices/translator/translator/detect?tabs=HTTP">a sample provided by Microsoft</a></p>
 <p>However, they are coming back in different place, one will be selected as "Primary" lanaguge, and others are marked as "alternatives".</p>
