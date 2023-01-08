@@ -47,6 +47,7 @@ There are three steps involved
 </ol>  
 <li>Translate to the target language by specify the original language</li>
 <p>After you have detected languages used in a chunk in the previous step, now you can send your chunk for translation by specify the original language that you want the Translator to take care one by one, instead of Translator only picks one primary language for translation purpose.  For example, a chunk is detect having French and Spanish, you want to first tell the translator to get all French taking care of, after that, you can ask Translator to take care of all Spanish.  Therefore, you get a translated chunk all in English!</p>
+</ol>  
 <h2>Setup and run codes</h2>
 Here are some steps to set up and run codes in this repository
 <ol>
