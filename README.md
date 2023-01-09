@@ -42,9 +42,9 @@ There are three steps involved
 </code>
 <p>There are several issues with language detection I have noticed regradless of granular level</p>
 <ol>
-  <li>It might NOT detect certain languages if their presence are minimal.</li>
-  <li>It might NOT detect certain languages if their "root" are more / less the same, such as English / French / Germen, or Chinese / Japanese.</li>
-  <li>It seems Translator never returning more than one language as alternatives, which is contradict to Microsoft documentations or samples.  I have asked <a href="https://learn.microsoft.com/en-us/answers/questions/1155532/azure-translator-can-only-detect-up-to-two-languag.html">a question in Azure community</a>.  It is highly appreciated that if you can share some insights with me!</li>
+  <li><span style="color:blue"><b>It might NOT detect certain languages if their presence are minimal.</b></span></li>
+  <li><b>It might NOT detect certain languages if their "root" are more / less the same, such as English / French / Germen, or Chinese / Japanese.</b></li>
+  <li><b>It seems Translator never returning more than one language as alternatives, which is contradict to Microsoft documentations or samples.  I have asked <a href="https://learn.microsoft.com/en-us/answers/questions/1155532/azure-translator-can-only-detect-up-to-two-languag.html">a question in Azure community</a>.  It is highly appreciated that if you can share some insights with me!</b></li>
 </ol>  
 <li>Translate to the target language by specify the original language</li>
 <p>After you have detected languages used in a chunk in the previous step, now you can send your chunk for translation by specify the original language that you want the Translator to take care one by one, instead of Translator only picks one primary language for translation purpose.  For example, a chunk is detect having French and Spanish, you want to first tell the translator to get all French taking care of, after that, you can ask Translator to take care of all Spanish.  Therefore, you get a translated chunk all in English!</p>
